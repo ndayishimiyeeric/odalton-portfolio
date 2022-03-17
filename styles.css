@@ -14,10 +14,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url("./img/header-shapes\ mobile@2x.svg");
-  background-position: 0 3.75rem;
-  background-repeat: repeat-x;
-  background-size: cover;
 }
 
 a {
@@ -27,7 +23,6 @@ a {
 
 .container {
   padding: 0 1.5rem;
-  /* height: 100vh; */
 }
 
 .welcome-page {
@@ -36,17 +31,24 @@ a {
   height: 100vh;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.9375rem;
+}
+
 header .logo {
   color: var(--primary-blue);
   font-weight: 700;
   font-size: 1.125rem;
 }
 
-.nav-bar {
-  flex-grow: 1;
-  margin-top: 1.25rem;
-  display: flex;
-  justify-content: space-between;
+.headline {
+  background: url("./img/header-shapes\ mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -1.5625rem;
+  margin-top: 2.5rem;
 }
 
 .nav-bar .menu {
