@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200&display=swap");
 
 :root {
   --primary-blue: #6070ff;
@@ -22,17 +22,24 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--primary-blue);
 }
 
 .container {
-  padding: 0 4rem;
-  height: 100vh;
+  padding: 0 1.5rem;
+  /* height: 100vh; */
 }
 
 .welcome-page {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+header .logo {
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 1.125rem;
 }
 
 .nav-bar {
@@ -42,15 +49,9 @@ a {
   justify-content: space-between;
 }
 
-.nav-bar .logo {
-  color: var(--primary-blue);
-  font-weight: 800;
-  font-size: 1.5625rem;
-}
-
 .nav-bar .menu {
   color: var(--primary-blue);
-  font-size: 1.5625rem;
+  font-size: 1.125rem;
   font-weight: 800;
 }
 
