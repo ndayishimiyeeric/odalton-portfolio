@@ -14,16 +14,26 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   background: #e5e5e5;
 }
 
 a {
   text-decoration: none;
   color: var(--primary-blue);
+  cursor: pointer;
 }
 
 ul {
   list-style: none;
+}
+
+button {
+  display: inline-block;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .container {
@@ -102,4 +112,90 @@ header .logo {
 .headline-icons .fa {
   color: #505f79;
   font-size: 1.5625rem;
+}
+
+/* Works section */
+
+.works {
+  display: grid;
+  row-gap: 88px;
+  padding-top: 8rem;
+}
+
+.work-item {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
+}
+
+.item-img {
+  margin-bottom: 12px;
+}
+
+.item-title {
+  display: flex;
+  justify-content: flex-start;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+.item-history {
+  padding-bottom: 20px;
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.item-history .t-bold {
+  text-transform: uppercase;
+  color: #344563;
+}
+
+.item-desc {
+  padding-bottom: 12px;
+}
+
+.item-desc p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.item-categories {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.item-category {
+  background: #ebebff;
+  color: #6070ff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 4px 12px;
+  margin-right: 8px;
+  border-radius: 8px;
+}
+
+.item-btn {
+  color: #396df2;
+  background: #fff;
+  border: 1px solid #396df2;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.item-btn:hover {
+  color: #fff;
+  background: #396df2;
 }
