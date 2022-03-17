@@ -27,7 +27,7 @@ ul {
 }
 
 .container {
-  padding: 0 1.5rem;
+  padding: 1.5rem;
 }
 
 .welcome-page {
@@ -40,7 +40,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0.9375rem;
 }
 
 header .logo {
@@ -55,8 +54,9 @@ header .logo {
 }
 
 .headline {
-  background: url("./img/header-shapes\ mobile@2x.svg");
+  background: url("./img/header-shapes\ mobile.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 0 -1.5625rem;
   margin-top: 2.5rem;
   padding-top: 1.875rem;
@@ -64,8 +64,6 @@ header .logo {
 
 .showcase {
   margin-top: 1.875rem;
-  width: 300px;
-  height: 150px;
   display: flex;
   align-items: center;
 }
@@ -79,8 +77,6 @@ header .logo {
 }
 
 .description {
-  width: 300px;
-  height: 140px;
   margin-bottom: 0.625rem;
 }
 
@@ -92,8 +88,6 @@ header .logo {
 
 .headline span {
   display: block;
-  width: 200px;
-  height: 24px;
 }
 
 .desc-link {
