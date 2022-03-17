@@ -36,6 +36,23 @@ button {
   border-radius: 10px;
 }
 
+.btn-primary {
+  color: #7f8cff;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
 .container {
   padding: 1.5rem;
 }
@@ -64,7 +81,7 @@ header .logo {
   background-size: cover;
   padding-top: 2.875rem;
   padding-bottom: 8.13rem;
-  border-bottom-left-radius: 6.25rem;
+  border-bottom-left-radius: 5.25rem;
 }
 
 .showcase {
@@ -95,23 +112,18 @@ header .logo {
   display: block;
 }
 
-.desc-link {
+.desc-span {
   color: #7f8cff;
   font-weight: 500;
   margin: 20px 0;
 }
 
-.headline-icons {
+.connect-icons {
   display: flex;
 }
 
-.headline-icons .icon {
+.connect-icons .icon {
   margin-right: 1.25rem;
-}
-
-.headline-icons .fa {
-  color: #505f79;
-  font-size: 1.5625rem;
 }
 
 /* Works section */
@@ -185,17 +197,82 @@ header .logo {
   border-radius: 8px;
 }
 
-.item-btn {
-  color: #396df2;
+/* About section */
+
+.about {
   background: #fff;
-  border: 1px solid #396df2;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  margin-bottom: 15px;
+  padding-top: 114px;
+  padding-bottom: 114px;
+  margin-top: 88px;
+  border-top-right-radius: 5.25rem;
 }
 
-.item-btn:hover {
-  color: #fff;
-  background: #396df2;
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-me h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+.about-me p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.about-me .connect-icons {
+  margin-bottom: 30px;
+}
+
+.web-dev {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  row-gap: 20px;
+}
+
+.language-title {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.language .language-title {
+  margin-bottom: 36px;
+}
+
+.language-cards {
+  display: grid;
+  row-gap: 12px;
+  padding-bottom: 16px;
+}
+
+.language-card {
+  padding: 10px 12px;
+  background: #f7f7f9;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.language-card img {
+  margin-right: 16px;
+}
+
+.frameworks,
+.skills {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #dfe1e6;
 }

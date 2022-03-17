@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> This is my portfolio project
+> This is my portfolio it provide the summary of completed projects as a web developer
 
 ## Built With
 
