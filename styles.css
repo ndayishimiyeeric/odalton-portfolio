@@ -14,7 +14,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #fff;
+  background: #e5e5e5;
 }
 
 a {
@@ -30,16 +30,11 @@ ul {
   padding: 1.5rem;
 }
 
-.welcome-page {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
 }
 
 header .logo {
@@ -54,12 +49,12 @@ header .logo {
 }
 
 .headline {
-  background: url("./img/header-shapes\ mobile.svg");
+  background: url("./img/header-shapes\ mobile.svg"), #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -1.5625rem;
-  margin-top: 2.5rem;
-  padding-top: 1.875rem;
+  padding-top: 2.875rem;
+  padding-bottom: 8.13rem;
+  border-bottom-left-radius: 6.25rem;
 }
 
 .showcase {
