@@ -14,32 +14,54 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #fff;
+  font-weight: 400;
+  background: #e5e5e5;
 }
 
 a {
   text-decoration: none;
   color: var(--primary-blue);
+  cursor: pointer;
 }
 
 ul {
   list-style: none;
 }
 
-.container {
-  padding: 1.5rem;
+button {
+  display: inline-block;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.welcome-page {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+.btn-primary {
+  color: #7f8cff;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
+.container {
+  padding: 1.5rem;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
 }
 
 header .logo {
@@ -54,12 +76,12 @@ header .logo {
 }
 
 .headline {
-  background: url("./img/header-shapes\ mobile.svg");
+  background: url("./img/header-shapes\ mobile.svg"), #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -1.5625rem;
-  margin-top: 2.5rem;
-  padding-top: 1.875rem;
+  padding-top: 2.875rem;
+  padding-bottom: 8.13rem;
+  border-bottom-left-radius: 5.25rem;
 }
 
 .showcase {
@@ -90,21 +112,171 @@ header .logo {
   display: block;
 }
 
-.desc-link {
+.desc-span {
   color: #7f8cff;
   font-weight: 500;
   margin: 20px 0;
 }
 
-.headline-icons {
+.connect-icons {
   display: flex;
 }
 
-.headline-icons .icon {
+.connect-icons .icon {
   margin-right: 1.25rem;
 }
 
-.headline-icons .fa {
-  color: #505f79;
-  font-size: 1.5625rem;
+/* Works section */
+
+.works {
+  display: grid;
+  row-gap: 5.5rem;
+  padding-top: 8rem;
+}
+
+.work-item {
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
+}
+
+.item-img {
+  margin-bottom: 12px;
+}
+
+.item-img img {
+  width: 100%;
+}
+
+.item-title {
+  display: flex;
+  justify-content: flex-start;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+.item-history {
+  padding-bottom: 20px;
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.item-history .t-bold {
+  text-transform: uppercase;
+  color: #344563;
+}
+
+.item-desc {
+  padding-bottom: 12px;
+}
+
+.item-desc p {
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.item-categories {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.item-category {
+  background: #ebebff;
+  color: #6070ff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 4px 12px;
+  margin-right: 8px;
+  border-radius: 8px;
+}
+
+/* About section */
+
+.about {
+  background: #fff;
+  padding-top: 114px;
+  padding-bottom: 114px;
+  margin-top: 88px;
+  border-top-right-radius: 5.25rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-me h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+.about-me p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.about-me .connect-icons {
+  margin-bottom: 30px;
+}
+
+.web-dev {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  row-gap: 20px;
+}
+
+.category-title {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.language .category-title {
+  margin-bottom: 36px;
+}
+
+.technogies {
+  display: grid;
+  row-gap: 12px;
+  padding-bottom: 16px;
+}
+
+.technogy {
+  padding: 10px 12px;
+  background: #f7f7f9;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.technogy img {
+  margin-right: 16px;
+}
+
+.frameworks,
+.skills {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #dfe1e6;
 }
