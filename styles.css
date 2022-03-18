@@ -244,7 +244,7 @@ header .logo {
   row-gap: 20px;
 }
 
-.language-title {
+.category-title {
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
@@ -253,17 +253,17 @@ header .logo {
   color: #000;
 }
 
-.language .language-title {
+.language .category-title {
   margin-bottom: 36px;
 }
 
-.language-cards {
+.technogies {
   display: grid;
   row-gap: 12px;
   padding-bottom: 16px;
 }
 
-.language-card {
+.technogy {
   padding: 10px 12px;
   background: #f7f7f9;
   display: flex;
@@ -271,7 +271,7 @@ header .logo {
   border-radius: 8px;
 }
 
-.language-card img {
+.technogy img {
   margin-right: 16px;
 }
 
