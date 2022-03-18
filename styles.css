@@ -136,13 +136,17 @@ header .logo {
 
 .work-item {
   background: #fff;
-  padding: 24px;
+  padding: 16px;
   border-radius: 16px;
   border: 1px solid #dfe1e6;
 }
 
 .item-img {
   margin-bottom: 12px;
+}
+
+.item-img img {
+  width: 100%;
 }
 
 .item-title {
