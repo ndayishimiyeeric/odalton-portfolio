@@ -130,7 +130,7 @@ header .logo {
 
 .works {
   display: grid;
-  row-gap: 88px;
+  row-gap: 5.5rem;
   padding-top: 8rem;
 }
 
