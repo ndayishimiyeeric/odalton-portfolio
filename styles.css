@@ -280,3 +280,10 @@ header .logo {
   padding-bottom: 23px;
   border-bottom: 1px solid #dfe1e6;
 }
+
+.contact-me {
+  background: url(./img/contactbg.svg), #6070ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 40px;
+}
