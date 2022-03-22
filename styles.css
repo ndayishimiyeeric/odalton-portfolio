@@ -287,3 +287,48 @@ header .logo {
   background-size: cover;
   border-top-left-radius: 40px;
 }
+
+.container-heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  padding-top: 90px;
+}
+
+.container-paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name,
+#mail {
+  width: 327px;
+  height: 48px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#message {
+  width: 327px;
+  height: 170px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 22px;
+}
+
+.form-button {
+  align-self: flex-start;
+  width: 140px;
+  height: 48px;
+  margin-left: 12px;
+}
