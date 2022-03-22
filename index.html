@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Odalton || Portfolio</title>
   </head>
+
   <body>
     <header class="container">
       <a href="#" class="logo">My Logo</a>
@@ -233,6 +234,48 @@
           </div>
         </li>
       </ul>
+    </section>
+    <section class="contact-me">
+      <div class="container">
+        <h3 class="contact-title">Contact me</h3>
+        <p class="contact-p">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mvolqjoe"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="user_name"
+            id="name"
+            placeholder="Yeremias"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            id="mail"
+            placeholder="you@you.com"
+            required
+          />
+          <textarea
+            name="user_message"
+            id="message"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Write your message here"
+          ></textarea>
+          <button type="submit" class="btn-primary form-button">
+            Get it Touch
+          </button>
+        </form>
+      </div>
     </section>
   </body>
 </html>

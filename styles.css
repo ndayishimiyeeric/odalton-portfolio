@@ -280,3 +280,66 @@ header .logo {
   padding-bottom: 23px;
   border-bottom: 1px solid #dfe1e6;
 }
+
+.contact-me {
+  background: #fff;
+}
+
+.contact-me > .container {
+  background: url(./img/contact-shapes.svg), #6070ff;
+  background-repeat: no-repeat;
+  background-position: right 30px;
+  border-top-left-radius: 5.25rem;
+}
+
+.contact-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-top: 85px;
+  margin-bottom: 10px;
+}
+
+.contact-p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 45px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#name,
+#mail {
+  width: 100%;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 15px 38px 15px 16px;
+}
+
+#message {
+  width: 100%;
+  height: 170px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  padding: 15px 38px 15px 16px;
+  font-family: Poppins, sans-serif;
+  color: #b3bac5;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form-button {
+  align-self: flex-start;
+  width: 140px;
+  height: 48px;
+  color: #6070ff;
+}
