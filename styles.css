@@ -368,6 +368,7 @@ header .logo {
   .nav-bar .bars-menu {
     display: none;
   }
+
   .nav-links {
     display: flex;
     justify-content: space-around;
@@ -381,9 +382,11 @@ header .logo {
     font-size: 0.9375rem;
     margin-right: 32px;
   }
+
   .nav-links:nth-child(3) {
     margin-right: 100px;
   }
+
   .headline {
     background: url("./img/Headerbgwider.svg"), #fff;
     background-repeat: no-repeat;
@@ -394,6 +397,7 @@ header .logo {
     border-bottom-left-radius: 5.25rem;
     margin-bottom: 142px;
   }
+
   .showcase {
     display: flex;
     align-items: center;
