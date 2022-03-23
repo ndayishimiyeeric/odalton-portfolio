@@ -75,6 +75,10 @@ header .logo {
   font-size: 0.9375rem;
 }
 
+.nav-links {
+  display: none;
+}
+
 .headline {
   background: url("./img/header-shapes\ mobile.svg"), #fff;
   background-repeat: no-repeat;
@@ -91,6 +95,7 @@ header .logo {
 }
 
 .showcase h1 {
+  width: 80%;
   color: #172b4d;
   font-size: 2.5rem;
   font-weight: 700;
@@ -141,12 +146,21 @@ header .logo {
   border: 1px solid #dfe1e6;
 }
 
+.item-body {
+  width: auto;
+}
+
 .item-img {
   margin-bottom: 12px;
 }
 
+.item-img > .item-img-2 {
+  display: none;
+}
+
 .item-img img {
   width: 100%;
+  height: 100%;
 }
 
 .item-title {
@@ -157,7 +171,6 @@ header .logo {
   font-size: 32px;
   line-height: 44px;
   margin-bottom: 20px;
-  width: 180px;
 }
 
 .item-history {
@@ -290,6 +303,7 @@ header .logo {
   background-repeat: no-repeat;
   background-position: right 30px;
   border-top-left-radius: 5.25rem;
+  display: grid;
 }
 
 .contact-title {
@@ -342,4 +356,195 @@ header .logo {
   width: 140px;
   height: 48px;
   color: #6070ff;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  .container {
+    padding: 1.5rem 6.875rem 1.5rem 6.875rem;
+  }
+
+  .nav-bar .bars-menu {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links .link {
+    color: #344563;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    margin-right: 32px;
+  }
+
+  .nav-links:nth-child(3) {
+    margin-right: 100px;
+  }
+
+  .headline {
+    background: url("./img/Headerbgwider.svg"), #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 10px top 5px;
+    padding-top: 10.6rem;
+    padding-bottom: 10.9rem;
+    border-bottom-left-radius: 5.25rem;
+    margin-bottom: 142px;
+  }
+
+  .showcase {
+    display: flex;
+    align-items: center;
+  }
+
+  .showcase h1 {
+    width: auto;
+    color: #091e42;
+    font-size: 3rem;
+  }
+
+  .description p {
+    font-size: 1.25rem;
+    width: 80%;
+  }
+
+  .showcase,
+  .description,
+  .headline > .desc-span,
+  .headline > .connect-icons {
+    margin-left: 85px;
+  }
+
+  .item-1,
+  .item-3 {
+    display: flex;
+  }
+
+  .item-1 > .item-img,
+  .item-3 > .item-img {
+    width: 100%;
+  }
+
+  .item-1 > .item-body,
+  .item-3 > .item-body {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .item-img > .item-img-2 {
+    display: block;
+  }
+
+  .item-img > .item-img-1 {
+    display: none;
+  }
+
+  .item-2,
+  .item-4 {
+    display: flex;
+  }
+
+  .item-2 > .item-img,
+  .item-4 > .item-img {
+    order: 1;
+    width: 100%;
+  }
+
+  .item-2 > .item-body,
+  .item-4 > .item-body {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 45% 50%;
+  }
+
+  .about-me {
+    margin-right: 37px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
+
+  .about-me h1 {
+    color: #091e42;
+  }
+
+  .web-dev {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category-title {
+    color: #344563;
+  }
+
+  .technogies {
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  .technogy {
+    margin-right: 12px;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+  }
+
+  .technogy img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .technogy p {
+    width: 100%;
+    align-self: flex-start;
+    justify-self: center;
+  }
+
+  .frameworks,
+  .skills {
+    margin-top: 20px;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .contact-me > .container {
+    background: url(./img/contact-form\ background\ shapes-wide-s.svg), #6070ff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 5.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-header {
+    width: 80%;
+  }
+
+  .contact-form {
+    width: 60%;
+  }
+
+  .form-button {
+    align-self: center;
+  }
 }
