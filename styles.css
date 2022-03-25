@@ -28,12 +28,22 @@ ul {
   list-style: none;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 button {
   display: inline-block;
   padding: 12px;
   cursor: pointer;
   text-align: center;
   border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.95);
 }
 
 .btn-primary {
@@ -62,6 +72,9 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 header .logo {
@@ -86,12 +99,14 @@ header .logo {
   padding-top: 2.875rem;
   padding-bottom: 8.13rem;
   border-bottom-left-radius: 5.25rem;
+  margin-top: 75px;
 }
 
 .showcase {
   margin-top: 1.875rem;
   display: flex;
   align-items: center;
+  animation: fromLeftAnime 1.5s ease-in-out;
 }
 
 .showcase h1 {
@@ -105,6 +120,7 @@ header .logo {
 
 .description {
   margin-bottom: 0.625rem;
+  animation: fromLeftAnime 2s ease-in-out;
 }
 
 .description p {
@@ -121,10 +137,12 @@ header .logo {
   color: #7f8cff;
   font-weight: 500;
   margin: 20px 0;
+  animation: fromLeftAnime 2.5s ease-in-out;
 }
 
 .connect-icons {
   display: flex;
+  animation: fromLeftAnime 2.8s ease-in-out;
 }
 
 .connect-icons .icon {
@@ -144,6 +162,7 @@ header .logo {
   padding: 16px;
   border-radius: 16px;
   border: 1px solid #dfe1e6;
+  height: 100%;
 }
 
 .item-body {
@@ -282,6 +301,11 @@ header .logo {
   display: flex;
   align-items: center;
   border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.technogy:hover {
+  transform: translateY(-10px);
 }
 
 .technogy img {
@@ -358,6 +382,35 @@ header .logo {
   color: #6070ff;
 }
 
+/* Animations */
+
+@keyframes fromLeftAnime {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromRightAnime {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromTopAnime {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* Media queries */
 
 @media (min-width: 768px) {
@@ -381,6 +434,23 @@ header .logo {
     font-weight: 500;
     font-size: 0.9375rem;
     margin-right: 32px;
+    position: relative;
+  }
+
+  .link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #344563;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .link:hover::before {
+    transform: scaleX(1);
   }
 
   .nav-links:nth-child(3) {
@@ -391,8 +461,8 @@ header .logo {
     background: url("./img/Headerbgwider.svg"), #fff;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right 10px top 5px;
-    padding-top: 10.6rem;
+    background-position: right 10px;
+    padding-top: 12.5rem;
     padding-bottom: 10.9rem;
     border-bottom-left-radius: 5.25rem;
     margin-bottom: 142px;
@@ -401,6 +471,7 @@ header .logo {
   .showcase {
     display: flex;
     align-items: center;
+    animation: fromLeftAnime 1.5s ease-in-out;
   }
 
   .showcase h1 {
@@ -419,6 +490,11 @@ header .logo {
   .headline > .desc-span,
   .headline > .connect-icons {
     margin-left: 85px;
+  }
+
+  .work-item:hover {
+    border: 2px solid #a7aeff;
+    box-shadow: 0 20px 20px #a7aeff;
   }
 
   .item-1,
@@ -481,6 +557,7 @@ header .logo {
     margin-right: 37px;
     margin-top: 120px;
     margin-bottom: 100px;
+    animation: fromLeftAnime 1s ease-in-out;
   }
 
   .about-me h1 {
@@ -491,6 +568,7 @@ header .logo {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    animation: fromRightAnime 1s ease-in-out;
   }
 
   .category-title {
@@ -507,6 +585,11 @@ header .logo {
     flex-direction: column;
     text-align: center;
     width: 30%;
+    transition: transform 0.2s ease-in;
+  }
+
+  .technogy:hover {
+    transform: translateY(-15px);
   }
 
   .technogy img {
@@ -533,18 +616,27 @@ header .logo {
     border-top-left-radius: 5.25rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   .contact-header {
-    width: 80%;
+    width: 550px;
+    margin: 0 auto 0 auto;
   }
 
   .contact-form {
-    width: 60%;
+    width: 550px;
+    margin: 0 auto 0 auto;
+    padding: 0 75px 0 75px;
   }
 
   .form-button {
     align-self: center;
+  }
+
+  .logo,
+  .nav-bar {
+    animation: fromTopAnime;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
   }
 }
