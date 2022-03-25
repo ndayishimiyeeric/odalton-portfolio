@@ -436,12 +436,25 @@ header .logo {
   .showcase {
     display: flex;
     align-items: center;
+    animation: fromLeftAnime 0.8s ease-in-out;
   }
 
   .showcase h1 {
     width: auto;
     color: #091e42;
     font-size: 3rem;
+  }
+
+  .description {
+    animation: fromLeftAnime 0.8s ease-in-out;
+  }
+
+  .desc-span {
+    animation: fromLeftAnime 0.8s ease-in-out;
+  }
+
+  .connect-icons {
+    animation: fromLeftAnime 0.8s ease-in-out;
   }
 
   .description p {
