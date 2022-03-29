@@ -173,10 +173,6 @@ header .logo {
   margin-bottom: 12px;
 }
 
-.item-img > .item-img-2 {
-  display: none;
-}
-
 .item-img img {
   width: 100%;
   height: 100%;
@@ -515,14 +511,6 @@ header .logo {
     margin-top: 20px;
     width: 100%;
     padding-left: 40px;
-  }
-
-  .item-img > .item-img-2 {
-    display: block;
-  }
-
-  .item-img > .item-img-1 {
-    display: none;
   }
 
   .item-2,
