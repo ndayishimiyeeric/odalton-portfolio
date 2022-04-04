@@ -9,9 +9,12 @@ menuBtn.addEventListener('click', () => {
 
 const navLink = document.getElementsByClassName('link');
 
-for (let i = 0; i < navLink.length; i++) {
+let i = 0;
+
+while (i < navLink.length) {
   navLink[i].addEventListener('click', () => {
     menuNav.classList.toggle('active');
     document.body.classList.toggle('overflow-disabled');
   });
+  i = i + 1;
 }
