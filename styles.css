@@ -92,6 +92,35 @@ header .logo {
   display: none;
 }
 
+/* mobile navigation */
+.active {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(96, 112, 255, 0.7);
+  backdrop-filter: blur(15px);
+}
+
+.active a img:nth-child(1){
+  display: none;
+}
+
+.active a img:nth-child(2){
+  display: block;
+}
+
+.bars-menu {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+}
+
+.active .nav-links {
+  display: block;
+}
+
 .headline {
   background: url("./img/header-shapes\ mobile.svg"), #fff;
   background-repeat: no-repeat;
