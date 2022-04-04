@@ -9,8 +9,6 @@ menuBtn.addEventListener('click', () => {
 
 const navLink = document.getElementsByClassName('link');
 
-// document.body.classList.toggle('overflow-disabled');
-
 
 for (let i = 0; i < navLink.length; i++) {
   navLink[i].addEventListener('click', () => {
