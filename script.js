@@ -1,9 +1,10 @@
 const menuNav = document.querySelector('.nav-bar');
 const menuBtn = document.querySelector('.bars-menu');
+const bodyNavigation = document.body;
 
 menuBtn.addEventListener('click', () => {
   menuNav.classList.toggle('active');
-  document.body.classList.toggle('overflow-disabled');
+  bodyNavigation.classList.toggle('overflow-disabled');
 
 });
 
@@ -14,7 +15,7 @@ let i = 0;
 while (i < navLink.length) {
   navLink[i].addEventListener('click', () => {
     menuNav.classList.toggle('active');
-    document.body.classList.toggle('overflow-disabled');
+    bodyNavigation.classList.toggle('overflow-disabled');
   });
-  i = i + 1;
+  i += 1;
 }
