@@ -99,15 +99,16 @@ header .logo {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(96, 112, 255, 0.7);
-  backdrop-filter: blur(15px);
+  background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(20px);
+  z-index: 99;
 }
 
-.active a img:nth-child(1){
+.active a img:nth-child(1) {
   display: none;
 }
 
-.active a img:nth-child(2){
+.active a img:nth-child(2) {
   display: block;
 }
 
@@ -119,6 +120,18 @@ header .logo {
 
 .active .nav-links {
   display: block;
+  margin: 74px 0 0 28px;
+}
+
+.active .nav-links li a {
+  font-size: 32px;
+  color: #fff;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.active .nav-links li {
+  margin-bottom: 40px;
 }
 
 .headline {
