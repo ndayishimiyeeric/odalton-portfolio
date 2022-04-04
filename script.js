@@ -5,7 +5,6 @@ const bodyNavigation = document.body;
 menuBtn.addEventListener('click', () => {
   menuNav.classList.toggle('active');
   bodyNavigation.classList.toggle('overflow-disabled');
-
 });
 
 const navLink = document.getElementsByClassName('link');
