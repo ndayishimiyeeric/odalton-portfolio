@@ -410,6 +410,91 @@ header .logo {
   }
 }
 
+/* Modals */
+
+.modal {
+  margin: 20px 16px;
+  padding: 24px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.modal-top .item-title {
+  margin-top: -15px;
+  font-size: 24px;
+}
+
+.modal-top .item-history {
+  margin-top: -20px;
+}
+
+.modal::backdrop {
+  background-color: #c1c7d0;
+  opacity: 0.9;
+}
+
+.modal .modal-top {
+  position: relative;
+}
+
+.modal-top .close-modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal-top .close-modal:hover {
+  cursor: pointer;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.modal-img img {
+  width: 100%;
+}
+
+.item-details-text {
+  font-size: 15px;
+  color: #344563;
+  line-height: 20px;
+  margin: 2px 0 10px 0;
+}
+
+.modal-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-buttons .btn-primary {
+  padding: 10px 10px;
+  border: 1px solid #396df2;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: start;
+  border-radius: 10px;
+  color: #396df2;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.modal-buttons .btn-primary:hover {
+  color: #fff;
+  transform: scale(0.94);
+}
+
+.modal-b-flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
@@ -678,5 +763,67 @@ header .logo {
     animation: fromTopAnime;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
+  }
+
+  .modal {
+    margin: 60px 160px 60px 160px;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .modal-top .item-title {
+    margin-top: -12px;
+    font-size: 24px;
+  }
+
+  .modal-top .item-history {
+    margin-top: -20px;
+  }
+
+  .modal-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  .item-details {
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .modal-img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .modal-img img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .modal-buttons .btn-primary {
+    padding: 10px 10px;
+    text-align: start;
+  }
+
+  .modal-b-flex {
+    gap: 5px;
+  }
+
+  .bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .bottom-left .item-categories {
+    margin-top: 5px;
+    margin-bottom: 16px;
+  }
+
+  .modal-buttons {
+    margin-top: 10px;
   }
 }

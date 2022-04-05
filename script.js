@@ -142,3 +142,16 @@ for (let i = 0; i < itemArray.length; i++) {
 }
 
 
+const modal1 = document.querySelector('.modal-1');
+const openModal = document.querySelector('.open-modal');
+const closeModal = document.querySelector('.close-modal');
+
+openModal.addEventListener('click', () => {
+  modal1.showModal();
+  bodyNavigation.classList.toggle('overflow-disabled');
+})
+
+closeModal.addEventListener('click', () => {
+  modal1.close();
+  bodyNavigation.classList.toggle('overflow-disabled');
+})
