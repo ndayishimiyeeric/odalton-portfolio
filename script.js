@@ -99,45 +99,46 @@ let work4 = {
   project_see_button: "See Project",
 }
 
-let item_title = document.getElementsByClassName('item-title');
-let item_image = document.getElementsByClassName('item-img-1');
-let t_bold = document.getElementsByClassName('t-bold');
-let counter1 = document.getElementsByClassName('counter1');
-let backend = document.getElementsByClassName('backend');
-let counter2 = document.getElementsByClassName('counter2');
-let year = document.getElementsByClassName('year');
-let item_description_text = document.getElementsByClassName('item-description-text');
-let first_category = document.getElementsByClassName('first-category');
-let second_category = document.getElementsByClassName('second-category');
-let third_category = document.getElementsByClassName('third-category');
-let project_see_button = document.getElementsByClassName('project-one-button');
+let item1 = document.querySelector('.item-1');
+let item2 = document.querySelector('.item-2');
+let item3 = document.querySelector('.item-3');
+let item4 = document.querySelector('.item-4');
+
+let itemArray = [item1, item2, item3, item4];
+
+let works = [work1, work2, work3, work4];
 
 
-function worksAssignment(workItem) {
-  // item_title.innerHTML = workItem.item_title;
-  for (let i = 0; i < item_title.length; i++){
-    item_title[i].innerHTML = workItem.item_title[i];
-  }
-    item_image.src = workItem.item_image;
-    t_bold.innerHTML = workItem.item_history.t_bold;
-    counter1.src = workItem.item_history.counter1;
-    backend.innerHTML = workItem.item_history.backend;
-    counter2.src = workItem.item_history.counter2;
-    year.innerHTML = workItem.item_history.year;
-    item_description_text.innerHTML = workItem.item_description_text;
-    first_category.innerHTML = workItem.item_categories.first_category;
-    second_category.innerHTML = workItem.item_categories.second_category;
-    third_category.innerHTML = workItem.item_categories.third_category;
-    project_see_button.innerHTML = workItem.project_see_button;
+
+
+for (let i = 0; i < itemArray.length; i++) {
+  //selector part
+  item_title = itemArray[i].querySelector('.item-title');
+  item_image = itemArray[i].querySelector('.item-img-1');
+  t_bold = itemArray[i].querySelector('.t-bold');
+  counter1 = itemArray[i].querySelector('.counter1');
+  backend = itemArray[i].querySelector('.backend');
+  counter2 = itemArray[i].querySelector('.counter2');
+  year = itemArray[i].querySelector('.year');
+  item_description_text = itemArray[i].querySelector('.item-description-text');
+  first_category = itemArray[i].querySelector('.first-category');
+  second_category = itemArray[i].querySelector('.second-category');
+  third_category = itemArray[i].querySelector('.third-category');
+  project_see_button = itemArray[i].querySelector('.project-one-button');
+  //object part
+    item_title.innerHTML = works[i].item_title;
+    item_image.src = works[i].item_image;
+    t_bold.innerHTML = works[i].item_history.t_bold;
+    counter1.src = works[i].item_history.counter1;
+    backend.innerHTML = works[i].item_history.backend;
+    counter2.src = works[i].item_history.counter2;
+    year.innerHTML = works[i].item_history.year;
+    item_description_text.innerHTML = works[i].item_description_text;
+    first_category.innerHTML = works[i].item_categories.first_category;
+    second_category.innerHTML = works[i].item_categories.second_category;
+    third_category.innerHTML = works[i].item_categories.third_category;
+    project_see_button.innerHTML = works[i].project_see_button;
+  
 }
-
-worksAssignment(work1)
-worksAssignment(work2)
-
-// let myWorks = [works, works2];
-// let secondWork = document.querySelector(".item-2");
-// let firstWork = document.querySelector(".item-1");
-
-
 
 
