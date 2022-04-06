@@ -313,11 +313,11 @@ btnClose[3].addEventListener('click', () => {
   childNodeModal[3].close();
 });
 
-//form validation
+// form validation
 const email = document.getElementById('mail');
 const form = document.getElementById('form-main');
 const errorMsg = document.getElementById('form-error');
-errorMsg.innerHTML = `Your email address should be in lowercase`;
+errorMsg.innerHTML = 'Your email address should be in lowercase';
 
 form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -331,4 +331,3 @@ form.addEventListener('submit', (event) => {
     errorMsg.style.visibility = 'hidden';
   }
 });
-
