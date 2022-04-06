@@ -39,6 +39,7 @@ const works = [
       third_category: 'javascript',
     },
     project_see_button: 'See Project',
+    close_modal_button: './img/closemodal.svg',
   },
 
   {
@@ -58,13 +59,14 @@ const works = [
       third_category: 'javascript',
     },
     project_see_button: 'See Project',
+    close_modal_button: './img/closemodal.svg',
   },
 
   {
     item_title: 'Tonic',
     item_image: '/img/work3.svg',
     item_history: {
-      t_bold: 'anopy',
+      t_bold: 'Canopy',
       counter1: '/img/Counter.svg',
       backend: 'Back End Dev',
       counter2: './img/Counter.svg',
@@ -77,6 +79,7 @@ const works = [
       third_category: 'javascript',
     },
     project_see_button: 'See Project',
+    close_modal_button: './img/closemodal.svg',
   },
 
   {
@@ -96,6 +99,7 @@ const works = [
       third_category: 'javascript',
     },
     project_see_button: 'See Project',
+    close_modal_button: './img/closemodal.svg',
   },
 ];
 
@@ -199,11 +203,39 @@ for (let i = 0; i < works.length; i += 1) {
   modalTitle.innerHTML = works[i].item_title;
   modalTop.appendChild(modalTitle);
 
-  const modalClose = document.createElement('div');
+  const modalHistory = document.createElement('div');
+  modalHistory.classList.add('item-history');
+  modalTop.appendChild(modalHistory);
+
+  const mSpan = document.createElement('span');
+  mSpan.classList.add('t-bold');
+  mSpan.innerHTML = works[i].item_history.t_bold;
+  modalHistory.appendChild(mSpan);
+
+  const mCouImg1 = document.createElement('img');
+  mCouImg1.classList.add('counter', 'counter1');
+  mCouImg1.src = works[i].item_history.counter1;
+  modalHistory.appendChild(mCouImg1);
+
+  const backSpanM = document.createElement('span');
+  backSpanM.classList.add('backend');
+  backSpanM.innerHTML = works[i].item_history.backend;
+  modalHistory.appendChild(backSpanM);
+
+  const mCouImg2 = document.createElement('img');
+  mCouImg2.classList.add('counter', 'counter2');
+  mCouImg2.src = works[i].item_history.counter2;
+  modalHistory.appendChild(mCouImg2);
+
+  const yearSpanM = document.createElement('span');
+  yearSpanM.classList.add('year');
+  yearSpanM.innerHTML = works[i].item_history.year;
+  modalHistory.appendChild(yearSpanM);
+
+  const modalClose = document.createElement('img');
+  modalClose.classList.add('close-modal');
+  modalClose.src = works[i].close_modal_button;
   modalTop.appendChild(modalClose);
-  modalClose.innerHTML = `<img class='close-modal' 
-                        src='./img/closemodal.svg' alt='close' />`;
-  modalTop.appendChild(itemHistory);
 
   const modalImage = document.createElement('div');
   dialogPop.appendChild(modalImage);
@@ -243,16 +275,6 @@ for (let i = 0; i < works.length; i += 1) {
               </li>
             </ul>
           </div>`;
-  // const modalOpen = document.querySelector('.modal');
-  const closeModal = document.getElementsByClassName('.close-modal');
-
-  // btn.addEventListener('click', () => {
-  //   modalOpen.showModal();
-  // });
-
-  // closeModal.addEventListener('click', () => {
-  //   childNodeModal[0].close();
-  // });
 }
 
 const childNodesNum = document.getElementsByClassName('work-item');
@@ -262,10 +284,8 @@ childNodesNum[2].classList.add('item-3');
 childNodesNum[3].classList.add('item-4');
 
 const childNodeModal = document.getElementsByClassName('modal');
-// console.log(childNodeModal);
 
 const btnChild = document.getElementsByClassName('project-button');
-// console.log(btnChild)
 btnChild[0].addEventListener('click', () => {
   childNodeModal[0].showModal();
 });
@@ -277,4 +297,18 @@ btnChild[2].addEventListener('click', () => {
 });
 btnChild[3].addEventListener('click', () => {
   childNodeModal[3].showModal();
+});
+
+const btnClose = document.getElementsByClassName('close-modal')
+btnClose[0].addEventListener('click', () => {
+  childNodeModal[0].close();
+});
+btnClose[1].addEventListener('click', () => {
+  childNodeModal[1].close();
+});
+btnClose[2].addEventListener('click', () => {
+  childNodeModal[2].close();
+});
+btnClose[3].addEventListener('click', () => {
+  childNodeModal[3].close();
 });

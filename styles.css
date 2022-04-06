@@ -194,6 +194,8 @@ header .logo {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+  display: flex;
+  gap: 10px;
 }
 
 .item-history .t-bold {
