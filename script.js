@@ -103,7 +103,7 @@ const workSection = document.querySelector('#works');
 for (let i = 0; i < works.length; i += 1) {
   // workitem
   const workItemDiv = document.createElement('div');
-  workSection.appendChild(workItemDiv)
+  workSection.appendChild(workItemDiv);
   workItemDiv.classList.add('work-item');
 
   const itemImage = document.createElement('div');
@@ -201,7 +201,7 @@ for (let i = 0; i < works.length; i += 1) {
 
   const modalClose = document.createElement('div');
   modalTop.appendChild(modalClose);
-  modalClose.innerHTML = `<img class="close-modal" src="./img/closemodal.svg" alt="" />`;
+  modalClose.innerHTML = `<img class='close-modal' src='./img/closemodal.svg' alt='close' />`;
   modalTop.appendChild(itemHistory);
 
   const modalImage = document.createElement('div');
@@ -215,29 +215,29 @@ for (let i = 0; i < works.length; i += 1) {
   const modalBottom = document.createElement('div');
   dialogPop.appendChild(modalBottom);
   modalBottom.classList.add('modal-bottom');
-  modalBottom.innerHTML = `<div class="item-details">
-            <p class="item-details-text">
+  modalBottom.innerHTML = `<div class='item-details'>
+            <p class='item-details-text'>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
             </p>
           </div>
-          <div class="bottom-left">
-            <ul class="item-categories">
-              <li class="item-category first-category">html</li>
-              <li class="item-category second-category">css</li>
-              <li class="item-category third-category">javascript</li>
+          <div class='bottom-left'>
+            <ul class='item-categories'>
+              <li class='item-category first-category'>html</li>
+              <li class='item-category second-category'>css</li>
+              <li class='item-category third-category'>javascript</li>
             </ul>
             <hr />
-            <ul class="modal-buttons">
-              <li class="modal-b-1">
-                <a class="btn-primary modal-b-flex" href="https://ndayishimiyeeric.github.io/odalton-portfolio/">
-                  See live <img src="./img/liveicon.svg" alt="" />
+            <ul class='modal-buttons'>
+              <li class='modal-b-1'>
+                <a class='btn-primary modal-b-flex' href='https://ndayishimiyeeric.github.io/odalton-portfolio/'>
+                  See live <img src='./img/liveicon.svg' alt='livedemo' />
                 </a>
               </li>
-              <li class="modal-b-2">
-                <a class="btn-primary modal-b-flex" href="https://github.com/ndayishimiyeeric/odalton-portfolio">
-                  See source <img src="./img/github22.svg" alt="" />
+              <li class='modal-b-2'>
+                <a class='btn-primary modal-b-flex' href='https://github.com/ndayishimiyeeric/odalton-portfolio'>
+                  See source <img src='./img/github22.svg' alt='github' />
                 </a>
               </li>
             </ul>
