@@ -312,3 +312,22 @@ btnClose[2].addEventListener('click', () => {
 btnClose[3].addEventListener('click', () => {
   childNodeModal[3].close();
 });
+
+// form validation
+const email = document.getElementById('mail');
+const form = document.getElementById('form-main');
+const errorMsg = document.getElementById('form-error');
+errorMsg.innerHTML = 'Your email address should be in lowercase';
+
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMsg.style.visibility = 'visible';
+    errorMsg.classList.add('error-msg');
+    setTimeout(() => {
+      errorMsg.style.visibility = 'hidden';
+    }, 3000);
+  } else {
+    errorMsg.style.visibility = 'hidden';
+  }
+});
