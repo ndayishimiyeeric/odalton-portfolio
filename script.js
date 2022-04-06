@@ -21,81 +21,81 @@ while (i < navLink.length) {
 }
 
 // Object start here
-let works = [
- workOne = {
-  item_title: "Tonic",
-  item_image: "./img/work1.svg",
+const works = [
+ {
+  item_title: 'Tonic',
+  item_image: './img/work1.svg',
   item_history: {
-    t_bold: "Canopy",
-    counter1: "./img/Counter.svg",
-    backend: "Back End Dev",
-    counter2: "./img/Counter.svg",
-    year: 2022
+    t_bold: 'Canopy',
+    counter1: './img/Counter.svg',
+    backend: 'Back End Dev',
+    counter2: './img/Counter.svg',
+    year: 2022,
   },
   item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
   item_categories: {
-    first_category: "html",
-    second_category: "css",
-    third_category: "javascript"
+    first_category: 'html',
+    second_category: 'css',
+    third_category: 'javascript',
   },
-  project_see_button: "See Project",
+  project_see_button: 'See Project',
 },
 
- workTwo = {
-  item_title: "Multi-Post Stories",
-  item_image: "./img/work2.svg",
+{
+  item_title: 'Multi-Post Stories',
+  item_image: './img/work2.svg',
   item_history: {
-    t_bold: "Canopy",
-    counter1: "./img/Counter.svg",
-    backend: "Back End Dev",
-    counter2: "./img/Counter.svg",
-    year: 2022
+    t_bold: 'Canopy',
+    counter1: './img/Counter.svg',
+    backend: 'Back End Dev',
+    counter2: './img/Counter.svg',
+    year: 2022,
   },
   item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
   item_categories: {
-    first_category: "html",
-    second_category: "css",
-    third_category: "javascript"
+    first_category: 'html',
+    second_category: 'css',
+    third_category: 'javascript',
   },
-  project_see_button: "See Project",
+  project_see_button: 'See Project',
 },
 
- workThree = {
-  item_title: "Tonic",
-  item_image: "./img/work3.svg",
+{
+  item_title: 'Tonic',
+  item_image: '/img/work3.svg',
   item_history: {
-    t_bold: "Canopy",
-    counter1: "./img/Counter.svg",
-    backend: "Back End Dev",
-    counter2: "./img/Counter.svg",
-    year: 2022
+    t_bold: 'anopy',
+    counter1: '/img/Counter.svg',
+    backend:'Back End Dev',
+    counter2: './img/Counter.svg',
+    year: 2022,
   },
   item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
   item_categories: {
-    first_category: "html",
-    second_category: "css",
-    third_category: "javascript"
+    first_category: 'html',
+    second_category: 'css',
+    third_category: 'javascript',
   },
-  project_see_button: "See Project",
+  project_see_button: 'See Project',
 },
 
- workFour = {
-  item_title: "Multi-Post Stories",
-  item_image: "./img/work4.svg",
+{
+  item_title: 'Multi-Post Stories',
+  item_image: './img/work4.svg',
   item_history: {
-    t_bold: "Canopy",
-    counter1: "./img/Counter.svg",
-    backend: "Back End Dev",
-    counter2: "./img/Counter.svg",
-    year: 2022
+    t_bold: 'Canopy',
+    counter1: './img/Counter.svg',
+    backend: 'Back End Dev',
+    counter2: './img/Counter.svg',
+    year: 2022,
   },
   item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
   item_categories: {
-    first_category: "html",
-    second_category: "css",
-    third_category: "javascript"
+    first_category: 'html',
+    second_category: 'css',
+    third_category: 'javascript',
   },
-  project_see_button: "See Project",
+  project_see_button: 'See Project',
 }
 ];
 
@@ -153,7 +153,7 @@ for (let i = 0; i < works.length; i += 1){
   yearSpan.innerHTML = works[i].item_history.year;
   itemHistory.appendChild(yearSpan);
 
-  const itemDesc = document.createElement('div')
+  const itemDesc = document.createElement('div');
   itemDesc.classList.add('item-desc');
   itemBody.appendChild(itemDesc);
 
@@ -209,7 +209,6 @@ for (let i = 0; i < works.length; i += 1){
   const modalImage = document.createElement('div');
   dialogPop.appendChild(modalImage);
   modalImage.classList.add('modal-img');
-  
   const modalimg = document.createElement('img');
   modalimg.classList.add('item-img-1');
   modalImage.appendChild(modalimg);
@@ -234,19 +233,18 @@ for (let i = 0; i < works.length; i += 1){
             <hr />
             <ul class="modal-buttons">
               <li class="modal-b-1">
-                <a class="btn-primary modal-b-flex" href="">
+                <a class="btn-primary modal-b-flex" href="https://ndayishimiyeeric.github.io/odalton-portfolio/">
                   See live <img src="./img/liveicon.svg" alt="" />
                 </a>
               </li>
               <li class="modal-b-2">
-                <a class="btn-primary modal-b-flex" href="">
+                <a class="btn-primary modal-b-flex" href="https://github.com/ndayishimiyeeric/odalton-portfolio">
                   See source <img src="./img/github22.svg" alt="" />
                 </a>
               </li>
             </ul>
           </div>`;
-  
-  const modalOpen = document.querySelector('.modal')
+  const modalOpen = document.querySelector('.modal');
   const closeModal = document.querySelector('.close-modal');
 
   btn.addEventListener('click', () => {
@@ -256,10 +254,9 @@ for (let i = 0; i < works.length; i += 1){
   closeModal.addEventListener('click', () => {
     modalOpen.close();
   });
-
 }
 
-let childNodesNum = document.getElementsByClassName('work-item');
+const childNodesNum = document.getElementsByClassName('work-item');
 childNodesNum[0].classList.add('item-1');
 childNodesNum[1].classList.add('item-2');
 childNodesNum[2].classList.add('item-3');
