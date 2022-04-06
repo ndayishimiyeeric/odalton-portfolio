@@ -66,7 +66,7 @@ const works = [
   item_history: {
     t_bold: 'anopy',
     counter1: '/img/Counter.svg',
-    backend:'Back End Dev',
+    backend: 'Back End Dev',
     counter2: './img/Counter.svg',
     year: 2022,
   },
@@ -96,12 +96,11 @@ const works = [
     third_category: 'javascript',
   },
   project_see_button: 'See Project',
-}
+},
 ];
 
-let workSection = document.querySelector('#works')
-for (let i = 0; i < works.length; i += 1){
-
+const workSection = document.querySelector('#works');
+for (let i = 0; i < works.length; i += 1) {
   // workitem
   const workItemDiv = document.createElement('div');
   workSection.appendChild(workItemDiv)
@@ -203,7 +202,6 @@ for (let i = 0; i < works.length; i += 1){
   const modalClose = document.createElement('div');
   modalTop.appendChild(modalClose);
   modalClose.innerHTML = `<img class="close-modal" src="./img/closemodal.svg" alt="" />`;
-
   modalTop.appendChild(itemHistory);
 
   const modalImage = document.createElement('div');
