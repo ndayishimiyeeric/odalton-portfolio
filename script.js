@@ -22,81 +22,81 @@ while (i < navLink.length) {
 
 // Object start here
 const works = [
- {
-  item_title: 'Tonic',
-  item_image: './img/work1.svg',
-  item_history: {
-    t_bold: 'Canopy',
-    counter1: './img/Counter.svg',
-    backend: 'Back End Dev',
-    counter2: './img/Counter.svg',
-    year: 2022,
+  {
+    item_title: 'Tonic',
+    item_image: './img/work1.svg',
+    item_history: {
+      t_bold: 'Canopy',
+      counter1: './img/Counter.svg',
+      backend: 'Back End Dev',
+      counter2: './img/Counter.svg',
+      year: 2022,
+    },
+    item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
+    item_categories: {
+      first_category: 'html',
+      second_category: 'css',
+      third_category: 'javascript',
+    },
+    project_see_button: 'See Project',
   },
-  item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
-  item_categories: {
-    first_category: 'html',
-    second_category: 'css',
-    third_category: 'javascript',
-  },
-  project_see_button: 'See Project',
-},
 
-{
-  item_title: 'Multi-Post Stories',
-  item_image: './img/work2.svg',
-  item_history: {
-    t_bold: 'Canopy',
-    counter1: './img/Counter.svg',
-    backend: 'Back End Dev',
-    counter2: './img/Counter.svg',
-    year: 2022,
+  {
+    item_title: 'Multi-Post Stories',
+    item_image: './img/work2.svg',
+    item_history: {
+      t_bold: 'Canopy',
+      counter1: './img/Counter.svg',
+      backend: 'Back End Dev',
+      counter2: './img/Counter.svg',
+      year: 2022,
+    },
+    item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
+    item_categories: {
+      first_category: 'html',
+      second_category: 'css',
+      third_category: 'javascript',
+    },
+    project_see_button: 'See Project',
   },
-  item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
-  item_categories: {
-    first_category: 'html',
-    second_category: 'css',
-    third_category: 'javascript',
-  },
-  project_see_button: 'See Project',
-},
 
-{
-  item_title: 'Tonic',
-  item_image: '/img/work3.svg',
-  item_history: {
-    t_bold: 'anopy',
-    counter1: '/img/Counter.svg',
-    backend: 'Back End Dev',
-    counter2: './img/Counter.svg',
-    year: 2022,
+  {
+    item_title: 'Tonic',
+    item_image: '/img/work3.svg',
+    item_history: {
+      t_bold: 'anopy',
+      counter1: '/img/Counter.svg',
+      backend: 'Back End Dev',
+      counter2: './img/Counter.svg',
+      year: 2022,
+    },
+    item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
+    item_categories: {
+      first_category: 'html',
+      second_category: 'css',
+      third_category: 'javascript',
+    },
+    project_see_button: 'See Project',
   },
-  item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
-  item_categories: {
-    first_category: 'html',
-    second_category: 'css',
-    third_category: 'javascript',
-  },
-  project_see_button: 'See Project',
-},
 
-{
-  item_title: 'Multi-Post Stories',
-  item_image: './img/work4.svg',
-  item_history: {
-    t_bold: 'Canopy',
-    counter1: './img/Counter.svg',
-    backend: 'Back End Dev',
-    counter2: './img/Counter.svg',
-    year: 2022,
+  {
+    item_title: 'Multi-Post Stories',
+    item_image: './img/work4.svg',
+    item_history: {
+      t_bold: 'Canopy',
+      counter1: './img/Counter.svg',
+      backend: 'Back End Dev',
+      counter2: './img/Counter.svg',
+      year: 2022,
+    },
+    item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
+    item_categories: {
+      first_category: 'html',
+      second_category: 'css',
+      third_category: 'javascript',
+    },
+    project_see_button: 'See Project',
   },
-  item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
-  item_categories: {
-    first_category: 'html',
-    second_category: 'css',
-    third_category: 'javascript',
-  },
-  project_see_button: 'See Project',
-},
 ];
 
 const workSection = document.querySelector('#works');
