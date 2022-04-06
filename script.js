@@ -201,7 +201,8 @@ for (let i = 0; i < works.length; i += 1) {
 
   const modalClose = document.createElement('div');
   modalTop.appendChild(modalClose);
-  modalClose.innerHTML = `<img class='close-modal' src='./img/closemodal.svg' alt='close' />`;
+  modalClose.innerHTML = `<img class='close-modal' 
+                        src='./img/closemodal.svg' alt='close' />`;
   modalTop.appendChild(itemHistory);
 
   const modalImage = document.createElement('div');
