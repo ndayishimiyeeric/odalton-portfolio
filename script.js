@@ -182,7 +182,7 @@ for (let i = 0; i < works.length; i += 1) {
 
   const btn = document.createElement('button');
   itemBody.appendChild(btn);
-  btn.classList.add('btn-primary', 'project-one-button');
+  btn.classList.add('btn-primary', 'project-button');
   btn.textContent = works[i].project_see_button;
 
   // dialog
@@ -243,16 +243,16 @@ for (let i = 0; i < works.length; i += 1) {
               </li>
             </ul>
           </div>`;
-  const modalOpen = document.querySelector('.modal');
-  const closeModal = document.querySelector('.close-modal');
+  // const modalOpen = document.querySelector('.modal');
+  const closeModal = document.getElementsByClassName('.close-modal');
 
-  btn.addEventListener('click', () => {
-    modalOpen.showModal();
-  });
+  // btn.addEventListener('click', () => {
+  //   modalOpen.showModal();
+  // });
 
-  closeModal.addEventListener('click', () => {
-    modalOpen.close();
-  });
+  // closeModal.addEventListener('click', () => {
+  //   childNodeModal[0].close();
+  // });
 }
 
 const childNodesNum = document.getElementsByClassName('work-item');
@@ -260,3 +260,21 @@ childNodesNum[0].classList.add('item-1');
 childNodesNum[1].classList.add('item-2');
 childNodesNum[2].classList.add('item-3');
 childNodesNum[3].classList.add('item-4');
+
+const childNodeModal = document.getElementsByClassName('modal');
+// console.log(childNodeModal);
+
+const btnChild = document.getElementsByClassName('project-button');
+// console.log(btnChild)
+btnChild[0].addEventListener('click', () => {
+  childNodeModal[0].showModal();
+});
+btnChild[1].addEventListener('click', () => {
+  childNodeModal[1].showModal();
+});
+btnChild[2].addEventListener('click', () => {
+  childNodeModal[2].showModal();
+});
+btnChild[3].addEventListener('click', () => {
+  childNodeModal[3].showModal();
+});
