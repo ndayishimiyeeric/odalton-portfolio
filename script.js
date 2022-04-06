@@ -299,7 +299,7 @@ btnChild[3].addEventListener('click', () => {
   childNodeModal[3].showModal();
 });
 
-const btnClose = document.getElementsByClassName('close-modal')
+const btnClose = document.getElementsByClassName('close-modal');
 btnClose[0].addEventListener('click', () => {
   childNodeModal[0].close();
 });
