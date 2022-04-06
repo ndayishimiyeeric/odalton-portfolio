@@ -312,3 +312,25 @@ btnClose[2].addEventListener('click', () => {
 btnClose[3].addEventListener('click', () => {
   childNodeModal[3].close();
 });
+
+//form validation
+const form = document.getElementById('contact-form');
+const email = document.getElementById('mail');
+const submitBtn = document.getElementById('submitBtn');
+
+
+submitBtn.addEventListener('submit', () => {
+  const regExp = /[a-z]/;
+  if (regExp.test(email.value) === false) {
+    showError();
+    form.preventDefault();
+  }
+});
+
+
+
+function showError(){
+  const error = document.getElementsByClassName('error');
+  error.style.display = 'block';
+  error.textContent = "Please use small letters in your email"
+}
