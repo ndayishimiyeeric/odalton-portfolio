@@ -314,23 +314,19 @@ btnClose[3].addEventListener('click', () => {
 });
 
 //form validation
-const form = document.getElementById('contact-form');
 const email = document.getElementById('mail');
-const submitBtn = document.getElementById('submitBtn');
+const form = document.getElementById('form');
+const errorMsg = document.getElementById('form-error');
 
-
-submitBtn.addEventListener('submit', () => {
-  const regExp = /[a-z]/;
-  if (regExp.test(email.value) === false) {
-    showError();
-    form.preventDefault();
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
+    event.preventDefault();
+    errorMsg.style.visibility = 'visible';
+    setTimeout(() => {
+      errorMsg.style.visibility = 'hidden';
+    }, 5000);
+  } else {
+    errorMsg.style.visibility = 'hidden';
   }
 });
 
-
-
-function showError(){
-  const error = document.getElementsByClassName('error');
-  error.style.display = 'block';
-  error.textContent = "Please use small letters in your email"
-}
