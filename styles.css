@@ -497,6 +497,21 @@ header .logo {
   align-items: center;
 }
 
+#form-error {
+  visibility: hidden;
+  transition: visibility 0.2s ease-in-out;
+}
+
+.error-msg {
+  background: linear-gradient(to right, #e53935, #e35d5b);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 4px 12px;
+  margin: -10px 0 5px 0;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {
@@ -827,5 +842,9 @@ header .logo {
 
   .modal-buttons {
     margin-top: 10px;
+  }
+
+  .error-msg {
+    margin: -10px auto 5px auto;
   }
 }

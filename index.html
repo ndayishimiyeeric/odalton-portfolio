@@ -155,7 +155,7 @@
           class="contact-form"
           action="https://formspree.io/f/mvolqjoe"
           method="POST"
-          id="form"
+          id="form-main"
         >
           <input
             type="text"
@@ -172,8 +172,6 @@
             placeholder="Enter your email here"
             required
           />
-          <small id="form-error" style="visibility:hidden;">ERROR</small>
-          <span class="error"></span>
           <textarea
             name="user_message"
             id="message"
@@ -182,6 +180,7 @@
             maxlength="500"
             placeholder="Write your message here"
           ></textarea>
+          <span id="form-error"></span>
           <button type="submit" id="submitBtn" class="btn-primary form-button">
             Get it Touch
           </button>
