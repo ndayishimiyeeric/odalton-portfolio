@@ -64,10 +64,10 @@ const works = [
 
   {
     item_title: 'Tonic',
-    item_image: '/img/work3.svg',
+    item_image: './img/work3.svg',
     item_history: {
       t_bold: 'Canopy',
-      counter1: '/img/Counter.svg',
+      counter1: './img/Counter.svg',
       backend: 'Back End Dev',
       counter2: './img/Counter.svg',
       year: 2022,
@@ -317,7 +317,9 @@ btnClose[3].addEventListener('click', () => {
 const email = document.getElementById('mail');
 const form = document.getElementById('form-main');
 const errorMsg = document.getElementById('form-error');
-errorMsg.innerHTML = 'Your email address should be in lowercase';
+const userName = document.getElementById('name');
+const message = document.getElementById('message');
+errorMsg.innerHTML = 'Your email address must be in lowercase';
 
 form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -331,3 +333,26 @@ form.addEventListener('submit', (event) => {
     errorMsg.style.visibility = 'hidden';
   }
 });
+
+// Local storage
+function populateStorage() {
+  const data = {
+    userName: userName.value,
+    userEmail: email.value,
+    userMessage: message.value,
+  };
+  localStorage.setItem('user-data', JSON.stringify(data));
+}
+
+// Populating local storage
+userName.addEventListener('focusout', populateStorage);
+email.addEventListener('focusout', populateStorage);
+message.addEventListener('focusout', populateStorage);
+
+// Parse data from local storage and get item
+const userDataParse = JSON.parse(localStorage.getItem('user-data'));
+
+// Refill form inputs
+userName.value = userDataParse.userName;
+email.value = userDataParse.userEmail;
+message.value = userDataParse.userMessage;
