@@ -64,7 +64,7 @@ const works = [
 
   {
     item_title: 'Tonic',
-    item_image: './img/work3.svg',
+    item_image: './img/work3.sv',
     item_history: {
       t_bold: 'Canopy',
       counter1: './img/Counter.svg',
@@ -287,7 +287,7 @@ const childNodeModal = document.getElementsByClassName('modal');
 
 const btnChild = document.getElementsByClassName('project-button');
 btnChild[0].addEventListener('click', () => {
-  childNodeModal[0].showModal();
+  childNodeModal.showModal();
 });
 btnChild[1].addEventListener('click', () => {
   childNodeModal[1].showModal();
