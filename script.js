@@ -23,16 +23,16 @@ while (i < navLink.length) {
 // Object start here
 const works = [
   {
-    item_title: 'Tonic',
-    item_image: './img/work1.svg',
+    item_title: 'Cartoon Books',
+    item_image: './img/cartoon.png',
     item_history: {
-      t_bold: 'Canopy',
+      t_bold: 'SPA',
       counter1: './img/Counter.svg',
-      backend: 'Back End Dev',
+      backend: 'Front End Dev',
       counter2: './img/Counter.svg',
       year: 2022,
     },
-    item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
+    item_description_text: 'Cartoon Books is Library where you can store your favorite funniest cartoon books where you can add, remove and display stored book(s). It uses the LocalStorage to store books and uses js classes to implement all the functionalities.',
     item_categories: {
       first_category: 'html',
       second_category: 'css',
@@ -40,19 +40,21 @@ const works = [
     },
     project_see_button: 'See Project',
     close_modal_button: './img/closemodal.svg',
+    live: 'https://ndayishimiyeeric.github.io/cartoon-books/',
+    source: 'https://github.com/ndayishimiyeeric/cartoon-books',
   },
 
   {
-    item_title: 'Multi-Post Stories',
-    item_image: './img/work2.svg',
+    item_title: 'Poke Web App',
+    item_image: './img/poke.png',
     item_history: {
-      t_bold: 'Canopy',
+      t_bold: 'API',
       counter1: './img/Counter.svg',
-      backend: 'Back End Dev',
+      backend: 'Front End Dev',
       counter2: './img/Counter.svg',
       year: 2022,
     },
-    item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
+    item_description_text: 'This is a Javascript Capstone Project at Microverse where I used Github Project(Kanban Board) to track my daily work, Webpack to bundle javascript, Jest to perform unit testing, API  to fetch data from PokeApi and the Involvement API. During the implementation of different features in this project like the liking and commenting functionality I learned a lot and it improved my javascript Skills.',
     item_categories: {
       first_category: 'html',
       second_category: 'css',
@@ -60,46 +62,52 @@ const works = [
     },
     project_see_button: 'See Project',
     close_modal_button: './img/closemodal.svg',
+    live: 'https://ndayishimiyeeric.github.io/Capstone-KanbanBoard/',
+    source: 'https://github.com/ndayishimiyeeric/Capstone-KanbanBoard',
   },
 
   {
-    item_title: 'Tonic',
-    item_image: './img/work3.svg',
+    item_title: 'World Peace Summit',
+    item_image: './img/summit.png',
     item_history: {
-      t_bold: 'Canopy',
+      t_bold: 'Dynamic',
       counter1: './img/Counter.svg',
-      backend: 'Back End Dev',
+      backend: 'Front End Dev',
       counter2: './img/Counter.svg',
       year: 2022,
     },
-    item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
+    item_description_text: 'World peace Summit is my first capstone project in microverse curriculum. It focus on Home and About  pages. the Home page has a section of speakers which is dynamicaly rendered using javascript and data are stored into an array.',
     item_categories: {
       first_category: 'html',
-      second_category: 'css',
+      second_category: 'sass',
       third_category: 'javascript',
     },
     project_see_button: 'See Project',
     close_modal_button: './img/closemodal.svg',
+    live: 'https://ndayishimiyeeric.github.io/first-capstone-summit/',
+    source: 'https://github.com/ndayishimiyeeric/first-capstone-summit',
   },
 
   {
-    item_title: 'Multi-Post Stories',
-    item_image: './img/work4.svg',
+    item_title: 'Leaderboard',
+    item_image: './img/leaderboard.png',
     item_history: {
-      t_bold: 'Canopy',
+      t_bold: 'fetch',
       counter1: './img/Counter.svg',
-      backend: 'Back End Dev',
+      backend: 'Front End Dev',
       counter2: './img/Counter.svg',
       year: 2022,
     },
-    item_description_text: 'A daily selection of privately personalized reads;no accounts or sign - ups required.',
+    item_description_text: 'This a Javascript Fetch Api project where I used an external Game Api to GET and POST scores in a given Gameplay this project improved my skills in javascript promises and asynchronous programming as well as my experience using and consuming an API',
     item_categories: {
       first_category: 'html',
-      second_category: 'css',
+      second_category: 'Tailwindcss',
       third_category: 'javascript',
     },
     project_see_button: 'See Project',
     close_modal_button: './img/closemodal.svg',
+    live: 'https://ndayishimiyeeric.github.io/Microverse-Leaderboard/',
+    source: 'https://github.com/ndayishimiyeeric/Microverse-Leaderboard',
   },
 ];
 
@@ -250,9 +258,7 @@ for (let i = 0; i < works.length; i += 1) {
   modalBottom.classList.add('modal-bottom');
   modalBottom.innerHTML = `<div class='item-details'>
             <p class='item-details-text'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
+              ${works[i].item_description_text}
             </p>
           </div>
           <div class='bottom-left'>
@@ -264,12 +270,12 @@ for (let i = 0; i < works.length; i += 1) {
             <hr />
             <ul class='modal-buttons'>
               <li class='modal-b-1'>
-                <a class='btn-primary modal-b-flex' href='https://ndayishimiyeeric.github.io/odalton-portfolio/'>
+                <a class='btn-primary modal-b-flex' href=${works[i].live}>
                   See live <img src='./img/liveicon.svg' alt='livedemo' />
                 </a>
               </li>
               <li class='modal-b-2'>
-                <a class='btn-primary modal-b-flex' href='https://github.com/ndayishimiyeeric/odalton-portfolio'>
+                <a class='btn-primary modal-b-flex' href=${works[i].source}>
                   See source <img src='./img/github22.svg' alt='github' />
                 </a>
               </li>
